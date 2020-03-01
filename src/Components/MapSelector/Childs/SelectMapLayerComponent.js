@@ -10,10 +10,10 @@ export default class SelectMapLayerComponent extends Component {
     }
 
     render() {
-        return (<div>
+        return (<div> map-layer: <span/>
             {this.props.layerIds.map((layerId, key) => {
                 return (<button onClick={() => this.handleToggle(layerId)} key={key}>
-                    {layerId}
+                   {layerId}
                 </button>)
             })}
         </div>)

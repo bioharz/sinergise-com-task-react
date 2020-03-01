@@ -26,6 +26,9 @@ const mapWidth = 512;
 const mapHeight = 512;
 const mapFormat = MimeTypes.JPEG;
 
+const fromTimeDefault = new Date(Date.UTC(2019, 11 - 1, 22, 0, 0, 0));
+const toTimeDefault = new Date(Date.UTC(2019, 12 - 1, 22, 23, 59, 59));
+
 /**
  * getters
  */
@@ -63,6 +66,13 @@ class Constants {
     static getMapFormat() {
         return mapFormat
     }
+    static getFromTimeDefault() {
+        return fromTimeDefault
+    }
+    static getToTimeDefault() {
+        return toTimeDefault
+    }
 }
+
 
 export default Constants
